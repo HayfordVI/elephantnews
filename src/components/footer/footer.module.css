@@ -1,0 +1,31 @@
+.container {
+  padding: 10px 0px 0px 0px;
+}
+
+.menuSocials { 
+  padding: 60px 0px 60px 0px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+}
+
+.links{
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+
+
+.copyright{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px 20px 0px;
+}
+
+.copyright p{
+  font-size: 12px;
+  cursor: pointer;
+}
