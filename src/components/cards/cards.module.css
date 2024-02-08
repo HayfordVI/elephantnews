@@ -1,67 +1,50 @@
 .container {
-
-
+  margin-bottom: 50px;
   display: flex;
-  justify-content: space-between;
-  height: 100%;
+  align-items: center;
+  gap: 50px;
 }
 
-.post{
-  background-color: floralwhite;
-  display: flex;
-  justify-content: space-between;
-  width: 922px;
-  height: 200px;
+.imageContainer {
+  flex: 1;
+  height: 350px;
+  position: relative;
 }
 
-.readPost {
-
+.image {
+  object-fit: cover;
 }
 
-.extras {
-  justify-self: flex-end;
-}
-
-.extra1 {
-  background-color: aquamarine;
-  border-radius: 1rem;
-
-  width: 292px;
-  height: 230px;
-  margin-bottom: 1.5rem;
-}
-
-.extra1Con{
-  padding: 0.75rem;  
+.textContainer {
+  flex: 1;
   display: flex;
   flex-direction: column;
+  gap: 30px; 
 }
 
-.extra1Con h1 {
-  font-weight: bold;
+.date {
+  color: gray;
 }
 
-
-.extra1Con a {
-  font-size: 0.75rem;
-}
-.extra2 {
-  background-color: forestgreen;
-  width: 292px;
-  height: 320px;
-  border-radius: 1rem;
-  margin-bottom: 1.5rem;
-
-}
-.extra3 {
-  background-color: hotpink;
-  width: 292px;
-  height: 600px;
-  border-radius: 1rem;
+.category {
+  color: crimson;
+  font-weight: 500;
 }
 
-.extraPosts {
-  display: flex;
-  justify-content: space-between;
+.desc {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--softTextColor);
 }
 
+.link {
+  border-bottom: 1px solid crimson;
+  width: max-content;
+  padding: 2px 0px;
+}
+
+@media screen and (max-width: 1280px) {
+  .imageContainer {
+    display: none;
+  }
+}

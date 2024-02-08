@@ -1,8 +1,7 @@
-import React from 'react';
 import Image from 'next/image';
 import styles from "./navbar.module.css"
 import Link from 'next/link';
-import AuthLinks from "../authLinks/AuthLinks";
+// import AuthLinks from "../authLinks/AuthLinks";
 
 const Navbar = () => {
     return (
@@ -21,7 +20,7 @@ const Navbar = () => {
           
 
           <div className={styles.links}>
-            <AuthLinks />
+            {/* <AuthLinks /> */}
             <button type="submit" value="Submit" className='w-24 rounded bg-slate-300 h-12'><Link href="/login/page.jsx">Sign In</Link></button>
           </div>
       </div>

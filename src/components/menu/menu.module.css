@@ -1,8 +1,20 @@
 .container {
+  flex: 2;
+  margin-top: 60px;
+}
 
-  outline: 2px solid #FFFFFF;
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  background-color: burlywood;
+.subtitle {
+  color: gray;
+  font-size: 16px;
+  font-weight: 400;
+}
+.title {
+  font-size: 28px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .container {
+    display: none;
+  }
 }

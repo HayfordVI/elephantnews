@@ -1,0 +1,8 @@
+.container {
+
+  outline: 2px solid #FFFFFF;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  background-color: burlywood;
+}

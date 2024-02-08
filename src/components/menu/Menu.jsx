@@ -1,20 +1,29 @@
-import Link from "next/link";
-import Image from "next/image";
+import React from 'react';
+import MenuPosts from "../menuPosts/MenuPosts"
 import styles from "./menu.module.css"
 
-const Menu = () => {
-    return (
-      <div className={styles.container}>
-        <div><Link href='/'>Ghana</Link></div>
-        <div><Link href='/'>World</Link></div>
-        <div><Link href='/'>Politics</Link></div>
-        <div><Link href='/'>Business</Link></div>
-        <div><Link href='/'>Opinion</Link></div>
-        <div><Link href='/'>Sports</Link></div>
-        <div><Link href='/'>Entertainment</Link></div>
-        <div><Link href='/'>Elephant NewsRoom</Link></div> 
-      </div>
-  );
-};
+const Trending = () => {
+  return (
+    <div className={styles.container}>
+        <h1 className={styles.title}>Trending Now </h1>
+        <MenuPosts withImage={false} />
 
-export default Menu;
+        <h1 className={styles.title}>Best of The Week</h1>
+
+        <h1 className={styles.title}>Incase You Missed it</h1>
+        <MenuPosts withImage={true} />
+        
+    </div>
+  )
+}
+
+export default Trending; 
+
+
+{/* <ol>
+          <li><Link href="/about">Texas Border</Link></li>
+          <li><Link href="/about">Computers</Link></li>
+          <li><Link href="/about">Bill Cosby</Link></li>
+          <li><Link href="/about">Oj Simpson</Link></li>
+          <li><Link href="/about">Coup de tat</Link></li> 
+        </ol> */}
